@@ -1,0 +1,8 @@
+:TMarks	tmarks.txt	/*:TMarks*
+:TMarksdelete	tmarks.txt	/*:TMarksdelete*
+:TMarksdeleteall	tmarks.txt	/*:TMarksdeleteall*
+:TMarksnext	tmarks.txt	/*:TMarksnext*
+:TMarkstoggle	tmarks.txt	/*:TMarkstoggle*
+tmarks#Next()	tmarks.txt	/*tmarks#Next()*
+tmarks#ToggleMarkAtLine()	tmarks.txt	/*tmarks#ToggleMarkAtLine()*
+tmarks.txt	tmarks.txt	/*tmarks.txt*
