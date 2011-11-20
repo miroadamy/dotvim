@@ -1,5 +1,3 @@
-" An example for a vimrc file.
-"
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
 " Last change:	2008 Jul 02
 "
@@ -10,11 +8,13 @@
 "	    for OpenVMS:  sys$login:.vimrc
 
 " The same thing as I have pathogen inside bundle as well
+filetype on " make sure git works with VIM. Pathogen will switch it off (I hope)
+filetype off
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
-" runtime bundle/tlib_vim/macros/tplugin.vim
+
 " Use Vim settings, rather then Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
