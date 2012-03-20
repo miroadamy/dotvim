@@ -13,3 +13,7 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+See also:
+
+* ModuleInfo.md - modules and customization description
+* Versions.md - history file
