@@ -142,3 +142,6 @@ set diffopt+=iwhite
 map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
 
+" Integration of the Marked app on mac
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
