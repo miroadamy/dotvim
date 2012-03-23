@@ -141,8 +141,6 @@ Support fucntions for other modules
 
 browse and to manipulate (place & delete) marks. 
 
-* http://www.vim.org/scripts/script.php?script_id=2594
-
 
 
         :TMarks 
@@ -169,10 +167,6 @@ See http://www.vim.org/scripts/script.php?script_id=2332
 ## vim-peepopen
 
 * See https://github.com/topfunky/PeepOpen-EditorSupport/tree/master/vim-peepopen
-
-
-
-## vim-scmdiff
 
 ## vim-unimpaired
 
