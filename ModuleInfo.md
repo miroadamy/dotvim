@@ -40,5 +40,141 @@ Special status line:
 
 # Scripts / Modules used
 
+## align
+
+* :help align
+* http://www.vim.org/scripts/script.php?script_id=294
+
+## bufexplorer
+
+* :help bufexplorer
+* http://www.vim.org/scripts/script.php?script_id=42
+* \be, \bs, \bv
+* in list: o - open, t - open in tab, d - delete
+
+## color_sampler_pack
+
+* adds menu with color schemes
+* http://www.vim.org/scripts/script.php?script_id=625
+
+## loreimpsum
+
+* http://www.vim.org/scripts/script.php?script_id=2289
+* :Loremipsum 
+
+## matchit
+
+* :help matchit
+* http://www.vim.org/scripts/script.php?script_id=39
+* %, g%, [%, ]%, a% (visual)
+
+## mru
+
+* http://www.vim.org/scripts/script.php?script_id=521
+* :MRU
+* use F7
+
+
+## nerdtree
+
+* http://www.vim.org/scripts/script.php?script_id=1658
+* :help nerdtree 
+
+## peepopen
+
+* See G. Grossenbach 
+* OS-X only
+
+## snipMate
+
+?? Do I need this 
+
+## sqlcomplete
+
+* help sql.txt
+* interesting, not really used (yet)
+* will leave it for now
+* http://www.vim.org/scripts/script.php?script_id=1572
+
+## supertab
+
+* :help supertab
+* http://www.vim.org/scripts/script.php?script_id=1643
+* press TAB in insert mode
+
+## surround
+
+* http://www.vim.org/scripts/script.php?script_id=1697
+* :help surround.txt
+** <CMD>s<DIRECTION> - ds", cs]), cs"<q> 
+
+## taglist
+
+* required exuberant ctags (not gnu or Unix)
+** ctags --version 
+[tkuser@cplx-dev-vf eclipse4]$ ctags --version
+
+
+        Exuberant Ctags 5.6, Copyright (C) 1996-2004 Darren Hiebert
+        Compiled: Jan  6 2007, 02:10:54
+        Addresses: <dhiebert@users.sourceforge.net>, http://ctags.sourceforge.net
+        Optional compiled features: +wildcards, +regex
+
+
+* sudo yum install ctags 
+** sudo ln -s /usr/bin/ctags /usr/local/bin/ctags
+* test in vim: 
+** :echo system(Tlist_Ctags_Cmd . ' --version') 
+
+How to use it:
+
+* see http://bgmerrell.blogspot.ca/2008/02/first-of-all-let-me-introduce-ctags-and.html
+
+## tlib_vim
+
+Support fucntions for other modules
+
+* See http://vimsomnia.blogspot.ca/2010/11/selecting-items-from-list-with-tlibs.html
+* See http://www.vim.org/scripts/script.php?script_id=1863
+
+## tmarks
+
+browse and to manipulate (place & delete) marks. 
+
+* http://www.vim.org/scripts/script.php?script_id=2594
+
+
+
+        :TMarks 
+            Browse all marks. 
+        :{range}TMarksPlace 
+           Place the next available a-z mark at the specified line. 
+        :{range}TMarksDelete 
+           Delete all a-z marks in range. 
+        :TMarksDeleteAll 
+           Delete all a-z marks in the current buffer. 
+
+
+
+## vim-fugitive
+
+
+## vim-pathogen
+
+The library for configuration and loading 
+
+See http://www.vim.org/scripts/script.php?script_id=2332
+
+
+## vim-peepopen
+
+* See https://github.com/topfunky/PeepOpen-EditorSupport/tree/master/vim-peepopen
+
+
+
+## vim-scmdiff
+
+## vim-unimpaired
+
 
 
