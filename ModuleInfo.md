@@ -158,6 +158,7 @@ browse and to manipulate (place & delete) marks.
 
 * See http://www.vim.org/scripts/script.php?script_id=2975
 * :help fugitive
+* http://vimcasts.org/episodes/archive
 
 View any blob, tree, commit, or tag in the repository with :Gedit (and :Gsplit, :Gvsplit, :Gtabedit, ...). Edit a file in the index and write to it to stage the changes. Use :Gdiff to bring up the staged version of the file side by side with the working tree version and use Vim's diff handling capabilities to stage a subset of the file's changes. 
 
