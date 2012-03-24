@@ -110,8 +110,8 @@ set ignorecase
 set smartcase
 set scrolloff=3
 
-set backupdir=~/.vim_tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim_tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" set backupdir=~/.vim_tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" set directory=~/.vim_tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 
@@ -136,7 +136,7 @@ set diffopt+=iwhite
 
 " Better command line:
 
-:set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v]\ [%p%%]\ [LEN=%L] %{fugitive#statusline()}
+:set statusline=%F%m%r%h%w\ [FMT=%{&ff}]\ [TYPE=%Y]\ [ASC=\%03.3b]\ [HEX=\%02.2B]\ [POS=%l,%v]\ [%p%%]\ [LEN=%L]\ %{fugitive#statusline()}%=%-14.(%c%V%)
 :set laststatus=2
 :set cursorline
 map <C-right> <ESC>:bn<CR>
@@ -145,3 +145,6 @@ map <C-left> <ESC>:bp<CR>
 " Integration of the Marked app on mac
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
+" For fugitive, do not keep buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+ 

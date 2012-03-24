@@ -177,6 +177,23 @@ Add %{fugitive#statusline()} to 'statusline' to get an indicator with the curren
 Oh, and of course there's :Git for running any arbitrary command. 
 
 
+Notable:
+
+* vimdiff - 3 windows
+* Gwrite
+* Gstatus
+* Gedit branch:file
+* diffput, diffget 
+* Glog + [Q, ]q (:copen, :cnext)
+* Glog -- all commit objects 
+* Glog -- % (all commits touching current file)
+
+### Searching
+
+* grep, git grep (only tracked files)
+* Ggrep - quickfix window
+* Glog --grep=TEXT -- (que into quickfix)
+
 
 
 ## vim-pathogen
