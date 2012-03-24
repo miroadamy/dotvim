@@ -145,3 +145,6 @@ map <C-left> <ESC>:bp<CR>
 " Integration of the Marked app on mac
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
+" For fugitive, do not keep buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+ 
