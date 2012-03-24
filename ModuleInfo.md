@@ -177,6 +177,12 @@ Add %{fugitive#statusline()} to 'statusline' to get an indicator with the curren
 Oh, and of course there's :Git for running any arbitrary command. 
 
 
+Notable:
+
+* vimdiff - 3 windows
+* Gwrite
+* Gedit branch:file
+ 
 
 
 ## vim-pathogen
