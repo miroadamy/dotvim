@@ -78,6 +78,20 @@ if has("autocmd")
 
   augroup END
 
+  " Syntax of these languages is fussy over tabs Vs spaces
+  autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+   
+  " Customisations based on house-style (arbitrary)
+  autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType java setlocal ts=4 sts=4 sw=4 noexpandtab
+  autocmd FileType groovy setlocal ts=4 sts=4 sw=4 noexpandtab
+   
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+
 else
 
   set autoindent		" always set autoindenting on
@@ -99,9 +113,13 @@ colorscheme desert
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR>
 
+nmap <F4> a<C-R>=strftime("%y%m%d@%H:%M")<CR><Esc>
+imap <F4> <C-R>=strftime("%y%m%d@%H:%M!%a")<CR>
+
 set cpoptions+=$
 set viminfo='1000,f1,<500,:1000,@100,/100,%
 
+" Underline with '='
 nnoremap <leader>1 yypVr=
 set wildmenu
 set wildmode=list:longest
@@ -147,4 +165,14 @@ map <C-left> <ESC>:bp<CR>
 
 " For fugitive, do not keep buffers
 autocmd BufReadPost fugitive://* set bufhidden=delete
+
+" Changes from VIMCASTS
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
  
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+" How to clean whitespaces
+" :%s/\s\+$//e
+
