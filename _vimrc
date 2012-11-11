@@ -136,11 +136,6 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 nmap <F7> :MRU<CR>
 imap <F7> <Esc>:MRU 
 :nnoremap <space> za
-" Shortcuts for moving between tabs. 
-" Alt-j to move to the tab to the left 
-noremap <A-j> gT 
-" Alt-k to move to the tab to the right 
-noremap <A-k> gt
 
 au BufNewFile,BufRead *.gradle setf groovy
 
@@ -157,8 +152,8 @@ set diffopt+=iwhite
 :set statusline=%F%m%r%h%w\ [FMT=%{&ff}]\ [TYPE=%Y]\ [ASC=\%03.3b]\ [HEX=\%02.2B]\ [POS=%l,%v]\ [%p%%]\ [LEN=%L]\ %{fugitive#statusline()}%=%-14.(%c%V%)
 :set laststatus=2
 :set cursorline
-map <C-right> <ESC>:bn<CR>
-map <C-left> <ESC>:bp<CR>
+map <D-Right> <ESC>:bn<CR>
+map <D-Left> <ESC>:bp<CR>
 
 " Integration of the Marked app on mac
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
