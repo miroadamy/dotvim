@@ -23,7 +23,7 @@ set nocompatible
 set backspace=indent,eol,start
 
 set backup		" keep a backup file
-set history=1000	" keep 50 lines of command line history
+set history=1000	" keep 50 lines 
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
@@ -170,4 +170,5 @@ set listchars=tab:▸\ ,eol:¬
 
 " How to clean whitespaces
 " :%s/\s\+$//e
-
+:nmap <silent> <leader>d <Plug>DashSearch
+:nmap <silent> <leader>D <Plug>DashGlobalSearch

@@ -14,3 +14,11 @@
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 	ignore = untracked
+[submodule "bundle/funcoo.vim"]
+	path = bundle/funcoo.vim
+	url = https://github.com/rizzatti/funcoo.vim.git
+	ignore = untracked
+[submodule "bundle/dash.vim"]
+	path = bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim.git
+	ignore = untracked
