@@ -14,3 +14,6 @@
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 	ignore = untracked
+[submodule "bundle/sqlutilities"]
+	path = bundle/sqlutilities
+	url = git@github.com:vim-scripts/SQLUtilities.git
