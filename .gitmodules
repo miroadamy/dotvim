@@ -22,3 +22,6 @@
 	path = bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
 	ignore = untracked
+[submodule "bundle/sqlutilities"]
+	path = bundle/sqlutilities
+	url = git@github.com:vim-scripts/SQLUtilities.git
