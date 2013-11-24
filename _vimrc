@@ -166,7 +166,7 @@ autocmd BufReadPost fugitive://* set bufhidden=delete
 nmap <leader>l :set list!<CR>
  
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+" set listchars=tab:▸\ ,eol:¬
 
 " How to clean whitespaces
 " :%s/\s\+$//e
