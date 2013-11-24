@@ -24,4 +24,4 @@
 	ignore = untracked
 [submodule "bundle/sqlutilities"]
 	path = bundle/sqlutilities
-	url = git@github.com:vim-scripts/SQLUtilities.git
+	url = git://github.com:vim-scripts/SQLUtilities.git
