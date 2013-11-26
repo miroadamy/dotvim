@@ -107,8 +107,12 @@ if !exists(":DiffOrig")
 endif
 
 " Miro's changes
-set guifont=Consolas:h15
+set guifont=Menlo:h14
 colorscheme desert	
+
+if &diff
+colorscheme evening
+endif
 
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR><Esc>
 imap <F3> <C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR>
