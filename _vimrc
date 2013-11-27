@@ -111,7 +111,7 @@ set guifont=Menlo:h14
 colorscheme desert	
 
 if &diff
-colorscheme evening
+	colorscheme  codeschool
 endif
 
 nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %H:%M ")<CR><Esc>
