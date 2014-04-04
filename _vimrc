@@ -176,3 +176,6 @@ nmap <leader>l :set list!<CR>
 " :%s/\s\+$//e
 :nmap <silent> <leader>d <Plug>DashSearch
 :nmap <silent> <leader>D <Plug>DashGlobalSearch
+
+" For JAD - requires jad in the path
+au BufReadCmd *.class setfiletype java | %!jad -p <afile>
