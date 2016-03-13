@@ -178,6 +178,6 @@ nmap <leader>l :set list!<CR>
 :nmap <silent> <leader>D <Plug>DashGlobalSearch
 
 " For JAD - requires jad in the path
-" au BufReadCmd *.class setfiletype java | %!java -jar /opt/jad158g/procyon.jar  <afile>
+au BufReadCmd *.class setfiletype java | %!java -jar /opt/jad158g/procyon.jar  <afile>
 
 set clipboard=unnamed
